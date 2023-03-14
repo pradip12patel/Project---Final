@@ -81,6 +81,7 @@ public class VerifyMenuBar extends BaseClass{
 		rb.delay(8000);
 		//put the path of file in a clipboard
 		StringSelection ss=new StringSelection("C:\\Users\\LENOVO\\OneDrive\\Pictures\\Screenshots\\Test.png");
+		Thread.sleep(2000);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 		//ctrl+V
 		rb.keyPress(KeyEvent.VK_CONTROL);   //press on ctrl key
