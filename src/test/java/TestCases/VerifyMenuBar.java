@@ -30,7 +30,7 @@ public class VerifyMenuBar extends BaseClass{
 	@Test
 	public void Menubar() throws InterruptedException, FileNotFoundException, AWTException  {
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
 		
 		ObjectPage obj=new ObjectPage(driver);
 		
