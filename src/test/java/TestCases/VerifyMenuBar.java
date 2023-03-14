@@ -78,22 +78,21 @@ public class VerifyMenuBar extends BaseClass{
 		obj.clickfile().click();
 		
 		Robot rb=new Robot();
-		rb.delay(8000);
+		rb.delay(5000);
 		//put the path of file in a clipboard
 		StringSelection ss=new StringSelection("C:\\Users\\LENOVO\\OneDrive\\Pictures\\Screenshots\\Test.png");
-		Thread.sleep(2000);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 		//ctrl+V
 		rb.keyPress(KeyEvent.VK_CONTROL);   //press on ctrl key
 		rb.keyPress(KeyEvent.VK_V);
-		rb.delay(7000);
+		rb.delay(5000);
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 		rb.delay(2000);
 		//Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
-		rb.delay(2000);
+		rb.delay(5000);
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alt=driver.switchTo().alert();
