@@ -91,6 +91,7 @@ public class VerifyMenuBar extends BaseClass{
 		rb.delay(2000);
 		//Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.delay(2500);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		rb.delay(5000);
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
