@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <!--class name="TestCases.VerifyFotter"/-->
-      <!--class name="TestCases.VerifyHeader"/-->
+      <class name="TestCases.VerifyFotter"/>
+      <class name="TestCases.VerifyHeader"/>
       <class name="TestCases.VerifyMenuBar"/>
-      <!--class name="TestCases.VerifyAddcart"/-->
+      <class name="TestCases.VerifyAddcart"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
