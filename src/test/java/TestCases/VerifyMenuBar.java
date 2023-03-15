@@ -95,6 +95,7 @@ public class VerifyMenuBar extends BaseClass{
 		rb.delay(2500);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		rb.delay(5000);     */
+		Thread.sleep(2000);
 		Runtime.getRuntime().exec("C:\\Program Files (x86)\\AutoIt3\\fileupload.exe");
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.alertIsPresent());
