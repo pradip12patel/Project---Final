@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
@@ -28,7 +29,7 @@ import Resources.ConstantMethod;
 public class VerifyMenuBar extends BaseClass{
 	
 	@Test
-	public void Menubar() throws InterruptedException, FileNotFoundException, AWTException  {
+	public void Menubar() throws InterruptedException, AWTException, IOException  {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
 		
@@ -77,7 +78,7 @@ public class VerifyMenuBar extends BaseClass{
 		
 		obj.clickfile().click();
 		
-		Robot rb=new Robot();
+	/*	Robot rb=new Robot();
 		rb.delay(5000);
 		//put the path of file in a clipboard
 		StringSelection ss=new StringSelection("C:\\Users\\LENOVO\\OneDrive\\Pictures\\Screenshots\\Test.png");
@@ -93,7 +94,8 @@ public class VerifyMenuBar extends BaseClass{
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.delay(2500);
 		rb.keyRelease(KeyEvent.VK_ENTER);
-		rb.delay(5000);
+		rb.delay(5000);     */
+		Runtime.getRuntime().exec("C:\\Program Files (x86)\\AutoIt3\\fileupload.exe");
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alt=driver.switchTo().alert();
