@@ -36,10 +36,10 @@ public class VerifyMenuBar extends BaseClass{
 		ObjectPage obj=new ObjectPage(driver);
 		
 		//Desktop
-  		Actions a=new Actions(driver);
+  /*		Actions a=new Actions(driver);
 		
 		WebElement b=obj.clickdesktop();
-		a.moveToElement(b).perform();           
+		a.moveToElement(b).perform();           */
 		CommonMethod.handlemouseover(obj.clickdesktop(),driver);
 		obj.clickshowall().click();
 		Thread.sleep(5000);     
