@@ -29,7 +29,11 @@ public class BaseClass {
 		
 		if(key1.equalsIgnoreCase("chrome"))  {
 			
-			 driver=new ChromeDriver();
+			 ChromeOptions op=new ChromeOptions();
+		     op.addArguments("--remote-allow-origins=*"); 
+	    	  
+	    	 driver=new ChromeDriver(op); 
+			
 		}
 		else if(key1.equalsIgnoreCase("firefox"))  {
 			
