@@ -6,15 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCases.VerifyMenuBar">
+      <class name="TestCases.VerifyHeader">
         <methods>
           <include name="aftersuite"/>
           <include name="openurl"/>
           <include name="teardown"/>
+          <include name="verifyHeaders"/>
           <include name="beforesuite"/>
-          <include name="Menubar"/>
         </methods>
-      </class> <!-- TestCases.VerifyMenuBar -->
+      </class> <!-- TestCases.VerifyHeader -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

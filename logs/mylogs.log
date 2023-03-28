@@ -13,3 +13,28 @@
 [INFO ] 2023-03-29 01:45:00.249 [main] VerifyHeader - passed Assertion
 [INFO ] 2023-03-29 01:45:32.196 [main] VerifyMenuBar - Passed assertion
 [INFO ] 2023-03-29 01:45:43.551 [main] VerifyAddcart - assertion is Pass
+[INFO ] 2023-03-29 02:01:23.956 [main] VerifyFotter - Pass assert
+[INFO ] 2023-03-29 02:01:39.776 [main] VerifyFotter - Pass assert1
+[INFO ] 2023-03-29 02:02:01.352 [main] VerifyFotter - Pass assert2
+[INFO ] 2023-03-29 02:02:22.512 [main] VerifyFotter - Pass assert3
+[INFO ] 2023-03-29 02:02:39.296 [main] VerifyHeader - passed Assertion
+[INFO ] 2023-03-29 02:03:13.703 [main] VerifyMenuBar - Passed assertion
+[INFO ] 2023-03-29 02:03:25.176 [main] VerifyAddcart - assertion is Pass
+[INFO ] 2023-03-29 02:10:29.074 [main] VerifyFotter - Pass assert
+[INFO ] 2023-03-29 02:10:45.131 [main] VerifyFotter - Pass assert1
+[INFO ] 2023-03-29 02:11:06.647 [main] VerifyFotter - Pass assert2
+[INFO ] 2023-03-29 02:11:28.074 [main] VerifyFotter - Pass assert3
+[INFO ] 2023-03-29 02:16:22.016 [main] VerifyFotter - Pass assert
+[INFO ] 2023-03-29 02:16:37.867 [main] VerifyFotter - Pass assert1
+[INFO ] 2023-03-29 02:16:59.156 [main] VerifyFotter - Pass assert2
+[INFO ] 2023-03-29 02:17:20.565 [main] VerifyFotter - Pass assert3
+[INFO ] 2023-03-29 02:18:07.389 [main] VerifyMenuBar - Passed assertion
+[INFO ] 2023-03-29 02:18:22.544 [main] VerifyAddcart - assertion is Pass
+[INFO ] 2023-03-29 02:24:49.119 [main] VerifyHeader - passed Assertion
+[INFO ] 2023-03-29 02:28:07.983 [main] VerifyFotter - Pass assert
+[INFO ] 2023-03-29 02:28:24.169 [main] VerifyFotter - Pass assert1
+[INFO ] 2023-03-29 02:28:45.701 [main] VerifyFotter - Pass assert2
+[INFO ] 2023-03-29 02:29:07.070 [main] VerifyFotter - Pass assert3
+[INFO ] 2023-03-29 02:29:21.049 [main] VerifyHeader - passed Assertion
+[INFO ] 2023-03-29 02:29:53.069 [main] VerifyMenuBar - Passed assertion
+[INFO ] 2023-03-29 02:30:07.997 [main] VerifyAddcart - assertion is Pass

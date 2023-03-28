@@ -12,9 +12,7 @@ import Resources.ExentManager;
 
 public class Listnerer extends ExentManager implements ITestListener{
 	
-	
-	public void onTestStart(ITestResult result) {
-		
+	 public void onTestStart(ITestResult result) {
 	     test=exent.createTest(result.getName());//result getName
 	    
 	   }
@@ -24,7 +22,6 @@ public class Listnerer extends ExentManager implements ITestListener{
 	
 	     test.log(Status.PASS, "Test case passed is" + result.getName());
 	   }
-	
 	public void onTestFailure(ITestResult result) {
 		
 	  if (result.getStatus() == ITestResult.FAILURE) {
@@ -45,17 +42,20 @@ public class Listnerer extends ExentManager implements ITestListener{
 	          
 	          e.printStackTrace();
 	        }
-	    }
+	     }
 	  }
+	
 	public void onTestSkipped(ITestResult result) {
 		
 	if (result.getStatus() == ITestResult.SKIP) {
 		
 	     test.log(Status.SKIP, "test case skipped is" + result.getName());
-	   }
-    
-     }
-  }   
+	     
+	    }
+
+	 }
+	
+   }   
 	
 	
     
