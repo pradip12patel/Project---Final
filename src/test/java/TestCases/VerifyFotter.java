@@ -1,5 +1,8 @@
 package TestCases;
 
+import java.util.List;
+
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -7,11 +10,14 @@ import org.testng.annotations.Test;
 import PageObjectModel.ObjectPage;
 import Resources.BaseClass;
 import Resources.CommonMethod;
+import Resources.ConstantMethod;
 
 public class VerifyFotter extends BaseClass{
 	
 	@Test
-	public void Verify() throws InterruptedException  {
+	public void VerifyFottets() throws InterruptedException  {
+		
+		Logger log = org.apache.logging.log4j.LogManager.getLogger(VerifyFotter.class);
 		
 		ObjectPage obj=new ObjectPage(driver);
 		
@@ -26,9 +32,20 @@ public class VerifyFotter extends BaseClass{
 		  }   */
 		
 		CommonMethod.handlelink(obj.clicklink());
+		CommonMethod.verifylinkAssertion((obj.clicklink()),ConstantMethod.assertlink, driver);
+		log.info("Pass assert");
+		
 		CommonMethod.handlelink(obj.clicklink1());
+		CommonMethod.verifylinkAssertion((obj.clicklink1()),ConstantMethod.assertlink1, driver);
+		log.info("Pass assert1");
+		
 		CommonMethod.handlelink(obj.clicklink2());
+		CommonMethod.verifylinkAssertion((obj.clicklink2()),ConstantMethod.assertlink2, driver);
+		log.info("Pass assert2");
+		
 		CommonMethod.handlelink(obj.clicklink3());
+		CommonMethod.verifylinkAssertion((obj.clicklink3()),ConstantMethod.assertlink3, driver);
+		log.info("Pass assert3");
 	}
 
 }

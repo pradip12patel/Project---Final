@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -29,7 +30,9 @@ import Resources.ConstantMethod;
 public class VerifyMenuBar extends BaseClass{
 	
 	@Test
-	public void Menubar() throws InterruptedException, AWTException, IOException  {
+	public void VerifyMenubars() throws InterruptedException, AWTException, IOException  {
+		
+		Logger log = org.apache.logging.log4j.LogManager.getLogger(VerifyMenuBar.class);
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
 		
@@ -97,7 +100,7 @@ public class VerifyMenuBar extends BaseClass{
 		rb.delay(5000);     */
 		Thread.sleep(2000);
 		Runtime.getRuntime().exec("C:\\Program Files (x86)\\AutoIt3\\fileupload.exe");
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(50));
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alt=driver.switchTo().alert();
 		System.out.println(alt.getText());
@@ -139,6 +142,10 @@ public class VerifyMenuBar extends BaseClass{
 		 else {
 			 System.out.println("Total Is Not Matching");
 		 }     
+		 
+		 CommonMethod.handleassertion(obj.verifyassertmenubar().getText(), ConstantMethod.assertmenubar, "check the assert");
+		 log.info("Passed assertion");
+		 
 	}
 	
 	

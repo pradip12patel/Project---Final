@@ -1,5 +1,7 @@
 package Resources;
 
+import static org.testng.Assert.assertEquals;
+
 import java.time.Duration;
 import java.util.List;
 
@@ -15,7 +17,7 @@ import PageObjectModel.ObjectPage;
 
 public class CommonMethod {
 	
-	static WebDriver driver=null;
+	// WebDriver driver=null;
 	
 	
 	public static void handleassertion(String actual,String expected,String message)    {
@@ -27,7 +29,7 @@ public class CommonMethod {
 		
 		s.assertEquals(ac, ep, message);
 		
-	//	s.assertAll();
+		s.assertAll();
 		
 	}
 	
@@ -61,7 +63,7 @@ public class CommonMethod {
 	
 	public static void handlelink(WebElement a) throws InterruptedException  {
 		
-		ObjectPage obj=new ObjectPage(driver);
+		ObjectPage obj=new ObjectPage(BaseClass.driver);
 		
 		 WebElement fotter=a;
 		   
@@ -74,5 +76,33 @@ public class CommonMethod {
 		  }
 		
 	}
+	
+	
+	public static void verifylinkAssertion(WebElement k, String Message, WebDriver d)   {
+		
+		ObjectPage obj=new ObjectPage(BaseClass.driver);
+		
+		WebElement li=k;
+		
+		for(int i=0;i<li.findElements(obj.tag).size();i++)  {
+			
+			SoftAssert SA=new SoftAssert();
+			
+			SA.assertEquals(li.findElements(obj.tag).get(i).getText(), d.getCurrentUrl(), Message);
+			
+			
+			
+			
+			
+		}
+		
+		
+	}
+
+
+	
+	
+	
+	
 
 }

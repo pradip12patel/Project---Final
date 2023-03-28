@@ -1,0 +1,15 @@
+[INFO ] 2023-03-29 01:34:02.131 [main] VerifyAddcart - assertiob is Pass
+[INFO ] 2023-03-29 01:35:56.894 [main] VerifyFotter - Pass assert
+[INFO ] 2023-03-29 01:36:12.467 [main] VerifyFotter - Pass assert1
+[INFO ] 2023-03-29 01:36:33.210 [main] VerifyFotter - Pass assert2
+[INFO ] 2023-03-29 01:36:53.925 [main] VerifyFotter - Pass assert3
+[INFO ] 2023-03-29 01:37:07.121 [main] VerifyHeader - passed Assertion
+[INFO ] 2023-03-29 01:37:43.632 [main] VerifyMenuBar - Passed assertion
+[INFO ] 2023-03-29 01:37:57.814 [main] VerifyAddcart - assertion is Pass
+[INFO ] 2023-03-29 01:43:49.317 [main] VerifyFotter - Pass assert
+[INFO ] 2023-03-29 01:44:04.910 [main] VerifyFotter - Pass assert1
+[INFO ] 2023-03-29 01:44:25.691 [main] VerifyFotter - Pass assert2
+[INFO ] 2023-03-29 01:44:46.435 [main] VerifyFotter - Pass assert3
+[INFO ] 2023-03-29 01:45:00.249 [main] VerifyHeader - passed Assertion
+[INFO ] 2023-03-29 01:45:32.196 [main] VerifyMenuBar - Passed assertion
+[INFO ] 2023-03-29 01:45:43.551 [main] VerifyAddcart - assertion is Pass

@@ -32,6 +32,7 @@ public class ObjectPage {
 	public By shooping=By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[5]");
 	public By continue1=By.xpath("//a[@class='btn btn-primary']");
 	public By checkout=By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[6]");
+	public By assertheader=By.xpath("//h1[normalize-space()='Shopping Cart']");
 	//addcart
 	public By search=By.xpath("//input[@placeholder='Search']");
 	public By click=By.xpath("//button[@class='btn btn-default btn-lg']");
@@ -41,6 +42,7 @@ public class ObjectPage {
 	public By addcard1=By.xpath("(//div[@class='button-group'])[1]//button[1]");
 	public By crtadd=By.xpath("//button[@class='btn btn-inverse btn-block btn-lg dropdown-toggle']");
 	public By sum=By.xpath("(//tbody//tr//td)[18]");
+	public By assertaddcart=By.xpath("//h2[normalize-space()='Products meeting the search criteria']");
 	//footer
 	public By link=By.xpath("(//div[@class='col-sm-3'])[2]");
 	public By link1=By.xpath("(//div[@class='col-sm-3'])[3]");
@@ -70,6 +72,7 @@ public class ObjectPage {
 	public By addtocart=By.xpath("(//button[@type='button'])[9]");
 	public By cartadd=By.xpath("//span[@id='cart-total']");
 	public By totals=By.xpath("//body[1]/header[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/table[1]/tbody[1]/tr[4]/td[2]");
+	public By assertmenubar=By.xpath("//h2[normalize-space()='Tablets']");
 	
 	public ObjectPage(WebDriver driver2) {
 		this.driver=driver2;
@@ -280,6 +283,12 @@ public class ObjectPage {
 		return driver.findElement(checkout);
 		
 	}
+   
+   public WebElement verifyassetheader()  {
+		
+		return driver.findElement(assertheader);
+		
+	}
   
   
    public WebElement clickdesktop()  {
@@ -377,6 +386,12 @@ public class ObjectPage {
 		
 	}
    
+   public WebElement verifyassertaddcart()  {
+		
+		return driver.findElement(assertaddcart);
+		
+	}
+   
    public WebElement clickcancel()  {
 		
 		return driver.findElement(cancel);
@@ -410,6 +425,12 @@ public class ObjectPage {
    public WebElement verifytotals()  {
 		
 		return driver.findElement(totals);
+		
+	}
+   
+   public WebElement verifyassertmenubar()  {
+		
+		return driver.findElement(assertmenubar);
 		
 	}
 }

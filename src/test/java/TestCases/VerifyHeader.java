@@ -1,8 +1,10 @@
 package TestCases;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import PageObjectModel.ObjectPage;
 import Resources.BaseClass;
@@ -12,13 +14,15 @@ import Resources.ConstantMethod;
 public class VerifyHeader extends BaseClass{
 	
 	@Test
-	public void verify() throws InterruptedException  {
+	public void verifyHeaders() throws InterruptedException  {
+		
+		Logger log = org.apache.logging.log4j.LogManager.getLogger(VerifyHeader.class);
 		
 		ObjectPage obj=new ObjectPage(driver);
 		
-		//String a= obj.verifynb().getText();
-		// System.out.println(a);
-	  CommonMethod.handleassertion(obj.verifynb().getText(), "123456789", "number is not matching");
+		SoftAssert s=new SoftAssert();
+	  
+		s.assertEquals(obj.verifynb().getText(), "123456789", "number is not matching");
 
 	  WebElement ele=obj.clickaccount();
 	  JavascriptExecutor ja=(JavascriptExecutor) driver;
@@ -55,7 +59,10 @@ public class VerifyHeader extends BaseClass{
 	    WebElement element=obj.Clickcheckout();
 		JavascriptExecutor jse=(JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].click()",element);
-	    
+		
+		CommonMethod.handleassertion(obj.verifyassetheader().getText(), ConstantMethod.assertheader, "check the value");
+	    log.info("passed Assertion");
+		
 	}
 
 }

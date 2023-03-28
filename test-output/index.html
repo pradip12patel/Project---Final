@@ -103,22 +103,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyMenuBar" class="method navigator-link" hash-for-method="Menubar">Menubar</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyFotter" class="method navigator-link" hash-for-method="VerifyFottets">VerifyFottets</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyFotter" class="method navigator-link" hash-for-method="Verify">Verify</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyMenuBar" class="method navigator-link" hash-for-method="VerifyMenubars">VerifyMenubars</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyHeader" class="method navigator-link" hash-for-method="verify">verify</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyAddcart" class="method navigator-link" hash-for-method="verifyAddCart">verifyAddCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyAddcart" class="method navigator-link" hash-for-method="verifytoall">verifytoall</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyHeader" class="method navigator-link" hash-for-method="verifyHeaders">verifyHeaders</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -136,14 +136,29 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">TestCases.VerifyHeader</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHeaders">
+                  </a> <!-- verifyHeaders -->
+                  <span class="method-name">verifyHeaders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">TestCases.VerifyFotter</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify">
-                  </a> <!-- Verify -->
-                  <span class="method-name">Verify</span>
+                  <a name="VerifyFottets">
+                  </a> <!-- VerifyFottets -->
+                  <span class="method-name">VerifyFottets</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -156,24 +171,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Menubar">
-                  </a> <!-- Menubar -->
-                  <span class="method-name">Menubar</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.VerifyHeader</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify">
-                  </a> <!-- verify -->
-                  <span class="method-name">verify</span>
+                  <a name="VerifyMenubars">
+                  </a> <!-- VerifyMenubars -->
+                  <span class="method-name">VerifyMenubars</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,9 +186,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifytoall">
-                  </a> <!-- verifytoall -->
-                  <span class="method-name">verifytoall</span>
+                  <a name="verifyAddCart">
+                  </a> <!-- verifyAddCart -->
+                  <span class="method-name">verifyAddCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,6 +203,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ComListener.Listnerer&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.VerifyFotter&quot;/&gt;
@@ -250,21 +253,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Verify')
+data.setCell(0, 1, 'VerifyFottets')
 data.setCell(0, 2, 'TestCases.VerifyFotter')
-data.setCell(0, 3, 85359);
+data.setCell(0, 3, 78045);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Menubar')
+data.setCell(1, 1, 'VerifyMenubars')
 data.setCell(1, 2, 'TestCases.VerifyMenuBar')
-data.setCell(1, 3, 45795);
+data.setCell(1, 3, 28617);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify')
+data.setCell(2, 1, 'verifyHeaders')
 data.setCell(2, 2, 'TestCases.VerifyHeader')
-data.setCell(2, 3, 15178);
+data.setCell(2, 3, 9939);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifytoall')
+data.setCell(3, 1, 'verifyAddCart')
 data.setCell(3, 2, 'TestCases.VerifyAddcart')
-data.setCell(3, 3, 8926);
+data.setCell(3, 3, 7121);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -284,9 +287,36 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.VerifyHeader</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforesuite</span>
+                <br/>
+                <span class="ignored-method-name">aftersuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.VerifyMenuBar</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">aftersuite</span>
+                <br/>
+                <span class="ignored-method-name">beforesuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.VerifyAddcart</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">aftersuite</span>
+                <br/>
+                <span class="ignored-method-name">beforesuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -296,63 +326,74 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyFotter</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforesuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">openurl</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">495 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Verify</span>
-                <span class="method-start">11311 ms</span>
+                <span class="method-name">VerifyFottets</span>
+                <span class="method-start">5939 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closebrowser</span>
-                <span class="method-start">96681 ms</span>
+                <span class="method-name">teardown([TestResult name=VerifyFottets status=SUCCESS method=VerifyFotter.VerifyFottets()[pri:0, instance:Te...)</span>
+                <span class="method-start">83995 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyHeader</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openurl</span>
-                <span class="method-start">97475 ms</span>
+                <span class="method-start">84166 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verify</span>
-                <span class="method-start">112901 ms</span>
+                <span class="method-name">verifyHeaders</span>
+                <span class="method-start">87859 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closebrowser</span>
-                <span class="method-start">128081 ms</span>
+                <span class="method-name">teardown([TestResult name=verifyHeaders status=SUCCESS method=VerifyHeader.verifyHeaders()[pri:0, instance:Te...)</span>
+                <span class="method-start">97801 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyMenuBar</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openurl</span>
-                <span class="method-start">128269 ms</span>
+                <span class="method-start">97927 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Menubar</span>
-                <span class="method-start">136686 ms</span>
+                <span class="method-name">VerifyMenubars</span>
+                <span class="method-start">101128 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closebrowser</span>
-                <span class="method-start">182484 ms</span>
+                <span class="method-name">teardown([TestResult name=VerifyMenubars status=SUCCESS method=VerifyMenuBar.VerifyMenubars()[pri:0, instance...)</span>
+                <span class="method-start">129748 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyAddcart</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openurl</span>
-                <span class="method-start">182673 ms</span>
+                <span class="method-start">129883 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifytoall</span>
-                <span class="method-start">192332 ms</span>
+                <span class="method-name">verifyAddCart</span>
+                <span class="method-start">133979 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closebrowser</span>
-                <span class="method-start">201262 ms</span>
+                <span class="method-name">teardown([TestResult name=verifyAddCart status=SUCCESS method=VerifyAddcart.verifyAddCart()[pri:0, instance:T...)</span>
+                <span class="method-start">141102 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.VerifyFotter</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">aftersuite</span>
+                <span class="method-start">141309 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

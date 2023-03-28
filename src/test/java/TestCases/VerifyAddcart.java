@@ -1,11 +1,13 @@
 package TestCases;
 
-import static org.junit.Assert.assertTrue;
-import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
 
-import java.util.Arrays;
+import org.apache.logging.log4j.*;
 
-import org.openqa.selenium.By;
+
+
+import java.util.logging.LogManager;
+
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -21,7 +23,9 @@ import Resources.ConstantMethod;
 public class VerifyAddcart extends BaseClass {
 
 	@Test
-	public void verifytoall() throws InterruptedException {
+	public void verifyAddCart() throws InterruptedException {
+		
+		Logger log = org.apache.logging.log4j.LogManager.getLogger(VerifyAddcart.class);
 
 		ObjectPage obj = new ObjectPage(driver);
 
@@ -67,6 +71,9 @@ public class VerifyAddcart extends BaseClass {
 		 else {
 			System.out.println("Not Tatch The Total");
 		}   
+		
+		CommonMethod.handleassertion(obj.verifyassertaddcart().getText(), ConstantMethod.assertaddcart, "check the value");
+		log.info("assertion is Pass");
 
 	}
 
