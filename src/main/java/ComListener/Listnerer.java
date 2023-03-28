@@ -33,13 +33,14 @@ public class Listnerer extends ExentManager implements ITestListener{
 	       String screenshotPath = "";  
 	    
 	        try {
+	        	
 	          screenshotPath = BaseClass.getScreenshot(BaseClass.driver, result.getName());
+	          
+	          test.addScreenCaptureFromPath(screenshotPath);
 	          
 	        } 
 	        catch (Exception e) {
-	        	
-	          test.addScreenCaptureFromPath(screenshotPath);
-	          
+	        
 	          e.printStackTrace();
 	        }
 	     }

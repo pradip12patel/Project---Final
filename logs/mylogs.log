@@ -38,3 +38,9 @@
 [INFO ] 2023-03-29 02:29:21.049 [main] VerifyHeader - passed Assertion
 [INFO ] 2023-03-29 02:29:53.069 [main] VerifyMenuBar - Passed assertion
 [INFO ] 2023-03-29 02:30:07.997 [main] VerifyAddcart - assertion is Pass
+[INFO ] 2023-03-29 03:57:46.025 [main] VerifyFotter - Pass assert
+[INFO ] 2023-03-29 03:58:01.966 [main] VerifyFotter - Pass assert1
+[INFO ] 2023-03-29 03:58:23.463 [main] VerifyFotter - Pass assert2
+[INFO ] 2023-03-29 03:58:44.789 [main] VerifyFotter - Pass assert3
+[INFO ] 2023-03-29 04:00:05.596 [main] VerifyMenuBar - Passed assertion
+[INFO ] 2023-03-29 04:00:20.918 [main] VerifyAddcart - assertion is Pass
